@@ -10,6 +10,8 @@ backcall==0.2.0
 beautifulsoup4==4.9.3
 black==19.10b0
 bleach==3.2.1
+blis==0.4.1
+catalogue==1.0.0
 certifi==2020.6.20
 cffi==1.14.3
 cfgv==3.2.0
@@ -18,15 +20,18 @@ click==7.1.2
 coverage==5.3
 cryptography==3.2
 cycler==0.10.0
+cymem==2.0.3
 decorator==4.4.2
 defusedxml==0.6.0
 distlib==0.3.1
 docutils==0.16
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 entrypoints==0.3
 filelock==3.0.12
 findiff==0.8.5
 folderstats==0.3.0
 future==0.18.2
+gensim==3.8.3
 identify==1.5.6
 idna==2.10
 imagesize==1.2.0
@@ -52,6 +57,7 @@ MarkupSafe==1.1.1
 matplotlib==3.3.2
 mistune==0.8.4
 more-itertools==8.5.0
+murmurhash==1.0.2
 mypy==0.750
 mypy-extensions==0.4.3
 nbclient==0.5.0
@@ -61,6 +67,7 @@ nbsphinx==0.7.1
 nbsphinx-link==1.3.0
 nest-asyncio==1.4.1
 networkx==2.5
+nltk==3.5
 nodeenv==1.5.0
 nose==1.3.7
 notebook==6.1.4
@@ -79,7 +86,9 @@ pexpect==4.8.0
 pickleshare==0.7.5
 pikepdf==1.19.3
 Pillow==7.2.0
+plac==1.1.3
 pre-commit==2.7.1
+preshed==3.0.2
 prometheus-client==0.8.0
 prompt-toolkit==3.0.7
 ptyprocess==0.6.0
@@ -108,9 +117,11 @@ scikit-optimize==0.8.1
 scipy==1.5.2
 Send2Trash==1.5.0
 six==1.15.0
+smart-open==3.0.0
 snowballstemmer==2.0.0
 sortedcontainers==2.2.2
 soupsieve==2.0.1
+spacy==2.3.2
 Sphinx==3.2.1
 sphinx-autodoc-typehints==1.11.0
 sphinx-automodapi==0.13
@@ -122,17 +133,21 @@ sphinxcontrib-htmlhelp==1.0.3
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.4
+srsly==1.0.2
 terminado==0.9.1
 testpath==0.4.4
+thinc==7.4.1
 tika==1.24
 toml==0.10.1
 tornado==6.0.4
+tqdm==4.51.0
 traitlets==5.0.4
 typed-ast==1.4.1
 typing-extensions==3.7.4.3
 urllib3==1.25.10
 virtualenv==20.0.33
 Wand==0.6.3
+wasabi==0.8.0
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
