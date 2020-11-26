@@ -4,7 +4,7 @@
 - Create an virtual environment 
 
 ```shell
-virtualenv --python=python3 .venv
+virtualenv --python=python3.8 .venv
 ```
 
 - Activate environment
