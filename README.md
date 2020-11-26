@@ -3,7 +3,7 @@
 1. ## Install environment
    1. Create an virtual environment 
    ```shell
-   virtualenv --python=python3 .venv
+   virtualenv --python=python3.8 .venv
    ```
 
    2. Activate environment
