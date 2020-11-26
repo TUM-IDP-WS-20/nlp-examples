@@ -30,11 +30,13 @@ entrypoints==0.3
 filelock==3.0.12
 findiff==0.8.5
 folderstats==0.3.0
+funcy==1.15
 future==0.18.2
 gensim==3.8.3
 identify==1.5.6
 idna==2.10
 imagesize==1.2.0
+iniconfig==1.1.1
 ipykernel==5.3.4
 ipython==7.18.1
 ipython-autotime==0.2.0
@@ -87,11 +89,14 @@ pickleshare==0.7.5
 pikepdf==1.19.3
 Pillow==7.2.0
 plac==1.1.3
+plotly==4.12.0
+pluggy==0.13.1
 pre-commit==2.7.1
 preshed==3.0.2
 prometheus-client==0.8.0
 prompt-toolkit==3.0.7
 ptyprocess==0.6.0
+py==1.9.0
 pyaml==20.4.0
 pybtex==0.22.2
 pybtex-docutils==0.2.2
@@ -101,9 +106,11 @@ pydata-sphinx-theme==0.4.1
 pydmd==0.3
 pydot==1.4.1
 Pygments==2.7.1
+pyLDAvis==2.1.2
 pyparsing==2.4.7
 PyPDF2==1.26.0
 pyrsistent==0.17.3
+pytest==6.1.2
 python-dateutil==2.8.1
 pytz==2020.1
 PyYAML==5.3.1
@@ -112,6 +119,7 @@ qtconsole==4.7.7
 QtPy==1.9.0
 regex==2020.10.11
 requests==2.24.0
+retrying==1.3.3
 scikit-learn==0.22.2.post1
 scikit-optimize==0.8.1
 scipy==1.5.2
@@ -151,5 +159,6 @@ wasabi==0.8.0
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
+wordcloud==1.8.1
 xlrd==1.2.0
 XlsxWriter==1.3.7
