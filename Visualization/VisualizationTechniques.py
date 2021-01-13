@@ -14,7 +14,7 @@ class VisualizationTechniques:
         self.random_state = random_state
 ########################################################################################
 ## REMOVE STOP WORDS
-## input: data_frame --> lemmatized content
+## input: data_frame --> lemmatized content, background_color, stopwords, max_words, max_font_size, random_state
 ## output: diagram --> draw a word cloud diagram
 ########################################################################################
     
@@ -34,4 +34,19 @@ class VisualizationTechniques:
         plt.imshow(word_cloud)
         plt.axis('off')
         plt.show();   
-    
+    def get_top_n_gram_diagram(self, corpus, num_of_words_in_each_topic, n=1):
+        import pandas as pd
+        import plotly.graph_objects as go
+        from sklearn.feature_extraction.text import CountVectorizer
+        
+        vec = CountVectorizer(ngram_range=(n, n), stop_words='english').fit(corpus)
+        bag_of_words = vec.transform(corpus)
+        sum_words = bag_of_words.sum(axis=0) 
+        words_freq = [(word, sum_words[0, idx]) for word, idx in vec.vocabulary_.items()]
+        words_freq =sorted(words_freq, key = lambda x: x[1], reverse=True)
+        common_words = words_freq[:n]
+        df = pd.DataFrame(common_words, columns = ['ngram' , 'count'])
+
+        fig = go.Figure([go.Bar(x=df['ngram'], y=df['count'])])
+        fig.update_layout(title=go.layout.Title(text="Top {} ngrams in the paper after removing stop words".format(num_of_words_in_each_topic)))
+        fig.show()
