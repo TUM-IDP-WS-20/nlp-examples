@@ -1,5 +1,26 @@
 # nlp-examples
 
+Welcome to nlp-examples! 
+This is the main repository that we used during the training. 
+There are 12 notebooks that we used during the development of 
+Literature Recommendation Software (LRS) to find best topic 
+modeling technique and best model parameters.
+
+The name of notebooks starts with a number that mostly indicates 
+in which order the notebooks are run. Basically, output of the 
+notebook that has lower number is given as an input to a notebook 
+that has higher number. However, running notebooks over the all 
+dataset might not be possible since training is taking very large 
+amount of time. Also, we cannot share the input files that require 
+are required for notebooks since they are very big.
+
+The dataflow in the notebooks might be seen a bit confusing at first glance. 
+Therefore, we created an explanatory notebook that contains 
+whole pipeline from raw input PDF files to predicting articles given user input.
+#### We strongly recommend you to check 00_FINAL_ALL_PIPELINE.ipynb 
+notebook first to getting used the concept and the environment.
+
+
 1. ## Install environment
    1. Create an virtual environment 
    ```shell
