@@ -3,7 +3,7 @@ from typing import Any
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
-from .base_model import BaseModel
+from lrs.base_model import BaseModel
 
 
 class LDAModel(BaseModel):

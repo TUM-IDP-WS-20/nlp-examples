@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from spacy.language import Language
 
-from .util import pre_process_text, produce_rec_top_n
+from lrs.util import pre_process_text, produce_rec_top_n
 
 
 class BaseModel:

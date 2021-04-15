@@ -3,7 +3,7 @@ from typing import Any
 from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from .base_model import BaseModel
+from lrs.base_model import BaseModel
 
 
 class LSAModel(BaseModel):

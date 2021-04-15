@@ -9,8 +9,6 @@ import textacy
 from spacy.language import Language
 from textacy import preprocessing
 
-from lrs.base_model import BaseModel
-
 
 def remove_dollar_sign(text):
     '''
@@ -173,7 +171,7 @@ def pre_process_text(text, REPLACED_WORDS, stop_list, nlp):
 
 
 # Methods Used Only on Training
-def accuracy_n(file_path: str, text: str, model: BaseModel, top_n: [int] = [1]):
+def accuracy_n(file_path: str, text: str, model, top_n: [int] = [1]):
     topics, topic_probability_scores = model.predict_topic([text])
 
     recs = produce_rec_top_n(topic_probability_scores.flatten(),
